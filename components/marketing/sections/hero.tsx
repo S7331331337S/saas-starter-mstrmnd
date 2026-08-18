@@ -1,70 +1,93 @@
-import Image from "next/image";
 import Link from "next/link";
-import { Parallax } from "@/components/marketing/parallax";
-import { assets } from "@/lib/assets";
+import { TetrahedronMark } from "@/components/marketing/logo";
+
+const agents = [
+  { id: "01", name: "Research", task: "Mapping the market", state: "ACTIVE" },
+  { id: "02", name: "Strategy", task: "Testing assumptions", state: "THINKING" },
+  { id: "03", name: "Operator", task: "Preparing the brief", state: "QUEUED" },
+];
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-line">
-      <div className="container-sable relative flex min-h-[calc(100svh-var(--nav-height)-40px)] flex-col justify-center py-16">
-        {/* Floating context labels */}
-        <div className="hv absolute left-[var(--gutter)] top-10 z-30" style={{ "--hv-delay": "0.55s" } as React.CSSProperties}>
-          <p className="label-sable">Mastermind — Edition 01</p>
-          <p className="label-sable text-mid mt-1.5">Personal · Agentic · Persistent</p>
-        </div>
-        <div className="hv absolute bottom-10 right-[var(--gutter)] z-30 text-right max-sm:hidden" style={{ "--hv-delay": "0.65s" } as React.CSSProperties}>
-          <p className="label-sable">A mind that compounds</p>
-          <p className="label-sable text-mid mt-1.5">For people who think in systems</p>
-        </div>
+    <section className="relative overflow-hidden border-b border-line bg-bone">
+      <div className="hero-grid pointer-events-none absolute inset-0" aria-hidden="true" />
+      <div className="container-sable relative grid min-h-[calc(100svh-var(--nav-height)-40px)] grid-cols-12 items-center gap-8 py-16 max-lg:grid-cols-1 max-lg:py-20">
+        <div className="relative z-10 col-span-7 max-lg:col-span-1">
+          <div
+            className="hv mb-10 flex items-center gap-4"
+            style={{ "--hv-delay": "0.05s" } as React.CSSProperties}
+          >
+            <span className="h-px w-10 bg-ink" aria-hidden="true" />
+            <p className="label-sable">Personal intelligence / Edition 01</p>
+          </div>
 
-        {/* Layer 1: massive wordmark behind the model */}
-        <div className="pointer-events-none relative z-10 flex items-center justify-center">
-          <Parallax speed={-0.06}>
-            <h1
-              aria-hidden="true"
-              className="hv heading-sable normal-case select-none text-center leading-[0.8] tracking-[-0.04em]"
-              style={{ fontSize: "clamp(64px, 18vw, 260px)", "--hv-delay": "0.1s" } as React.CSSProperties}
-            >
-              mstrmnd
-            </h1>
-          </Parallax>
-          <span className="sr-only">mstrmnd — your personal agentic mastermind</span>
-        </div>
+          <h1
+            className="hv heading-sable normal-case max-w-[850px] text-[clamp(64px,10.5vw,156px)] leading-[0.78] tracking-[-0.065em]"
+            style={{ "--hv-delay": "0.12s" } as React.CSSProperties}
+          >
+            Think less
+            <br />
+            <span className="text-mid">alone.</span>
+          </h1>
 
-        {/* Layer 2: model cutout in front of the type */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 flex justify-center">
-          <Parallax speed={0.03}>
-            <div className="hv" style={{ "--hv-delay": "0.3s" } as React.CSSProperties}>
-              <Image
-                src={assets.heroModel}
-                alt=""
-                width={560}
-                height={740}
-                priority
-                className="img-grey h-[min(66svh,620px)] w-auto object-contain drop-shadow-[0_26px_46px_rgba(16,16,16,0.22)]"
-              />
+          <div
+            className="hv mt-12 grid max-w-[650px] grid-cols-[1fr_auto] items-end gap-10 border-t border-ink pt-7 max-sm:grid-cols-1"
+            style={{ "--hv-delay": "0.24s" } as React.CSSProperties}
+          >
+            <p className="max-w-[430px] text-[17px] leading-relaxed text-foreground/75">
+              One persistent mind made of specialist agents. It remembers your
+              context, challenges your thinking, and turns intent into finished work.
+            </p>
+            <div className="flex items-center gap-6">
+              <Link href="/sign-up" className="btn-ink whitespace-nowrap">
+                Build your mind
+              </Link>
+              <Link href="/#platform" className="btn-line whitespace-nowrap">
+                See how
+              </Link>
             </div>
-          </Parallax>
-        </div>
-
-        {/* CTA cluster, bottom-left */}
-        <div
-          className="hv absolute bottom-10 left-[var(--gutter)] z-30 flex flex-col gap-5"
-          style={{ "--hv-delay": "0.45s" } as React.CSSProperties}
-        >
-          <p className="max-w-[300px] text-[15px] leading-relaxed text-foreground/80">
-            A council of agents that plans, researches, and executes with you —
-            carrying every conversation forward in memory.
-          </p>
-          <div className="flex items-center gap-6">
-            <Link href="/sign-up" className="btn-ink">
-              Start free
-            </Link>
-            <Link href="/pricing" className="btn-line">
-              View pricing
-            </Link>
           </div>
         </div>
+
+        <div
+          className="hv relative col-span-5 min-h-[590px] max-lg:col-span-1 max-lg:min-h-[520px] max-sm:min-h-[470px]"
+          style={{ "--hv-delay": "0.32s" } as React.CSSProperties}
+        >
+          <div className="absolute inset-0 border border-ink bg-ink text-bone shadow-[18px_18px_0_var(--tan)]">
+            <div className="flex items-center justify-between border-b border-bone/20 px-6 py-4">
+              <p className="label-sable text-bone/60">MSTRMND / LIVE COUNCIL</p>
+              <span className="flex items-center gap-2 text-[9px] tracking-[0.18em]">
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-bone" /> ONLINE
+              </span>
+            </div>
+
+            <div className="relative flex h-[250px] items-center justify-center overflow-hidden border-b border-bone/20">
+              <div className="hero-orbit absolute h-[190px] w-[190px] rounded-full border border-bone/15" />
+              <div className="hero-orbit hero-orbit--reverse absolute h-[130px] w-[130px] rounded-full border border-dashed border-bone/30" />
+              <TetrahedronMark className="relative z-10 h-28 w-28 text-bone" strokeWidth={2.5} />
+              <span className="label-sable absolute bottom-5 left-6 text-bone/45">
+                Shared memory / 184 threads
+              </span>
+            </div>
+
+            <div className="divide-y divide-bone/15">
+              {agents.map((agent) => (
+                <div key={agent.id} className="grid grid-cols-[32px_1fr_auto] items-center gap-4 px-6 py-5">
+                  <span className="font-mono text-[10px] text-bone/40">{agent.id}</span>
+                  <div>
+                    <p className="text-[13px] font-semibold uppercase tracking-[0.08em]">{agent.name}</p>
+                    <p className="mt-1 text-[11px] text-bone/50">{agent.task}</p>
+                  </div>
+                  <span className="label-sable text-bone/55">{agent.state}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <p className="label-sable absolute bottom-7 left-[var(--gutter)] text-mid max-lg:hidden">
+          Autonomous agents · Persistent memory · Connected tools
+        </p>
       </div>
     </section>
   );

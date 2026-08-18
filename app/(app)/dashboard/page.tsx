@@ -44,8 +44,8 @@ export default function DashboardPage() {
           </h1>
         )}
         <p className="mt-3 max-w-[480px] text-[13.5px] text-mid">
-          This is your product&apos;s home. Everything below is live Convex data —
-          open a second tab and watch it stay in sync.
+          Your council is ready. Set the context, choose an objective, and let
+          your agents turn it into a plan.
         </p>
       </div>
 
@@ -121,8 +121,6 @@ export default function DashboardPage() {
             <Link
               key={item.title}
               href={item.href}
-              target={item.external ? "_blank" : undefined}
-              rel={item.external ? "noreferrer" : undefined}
               className="arrow-link grid grid-cols-[44px_1fr_auto] items-baseline gap-6 border-b border-line py-5 transition-colors hover:bg-muted/60"
             >
               <span className="label-sable text-mid" style={{ fontVariantNumeric: "tabular-nums" }}>
