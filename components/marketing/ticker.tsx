@@ -1,10 +1,10 @@
 const items = [
-  "SABLE — the considered SaaS starter",
-  "Next.js App Router",
-  "Convex realtime backend",
-  "Clerk authentication",
-  "Stripe billing built in",
-  "Clone. Configure. Ship.",
+  "mstrmnd — your personal agentic mastermind",
+  "Agents that think ahead",
+  "Memory that compounds",
+  "Delegate the busywork",
+  "One mind, every context",
+  "Plan. Delegate. Ship.",
 ];
 
 export function Ticker() {

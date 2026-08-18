@@ -10,11 +10,11 @@ const archivo = Archivo({
 
 export const metadata: Metadata = {
   title: {
-    default: "SABLE — Considered essentials for shipping SaaS",
-    template: "%s — SABLE",
+    default: "mstrmnd — your personal agentic mastermind",
+    template: "%s — mstrmnd",
   },
   description:
-    "A production-grade SaaS starter. Next.js, Convex, Clerk, and Stripe wired end-to-end so you can ship the product, not the plumbing.",
+    "A council of AI agents that plans, remembers, and executes alongside you. Persistent memory, autonomous agents, and your tools — one continuous mind.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

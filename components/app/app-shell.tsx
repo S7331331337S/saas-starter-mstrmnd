@@ -28,8 +28,8 @@ export function AppShell({ children }: { children: ReactNode }) {
       >
         <div className="container-sable flex h-[72px] items-center justify-between">
           <div className="flex items-center gap-10 max-md:gap-5">
-            <Link href="/dashboard" className="heading-sable text-[19px]" aria-label="SABLE dashboard">
-              Sable
+            <Link href="/dashboard" className="heading-sable normal-case text-[19px]" aria-label="mstrmnd dashboard">
+              mstrmnd
             </Link>
             <nav className="flex items-center gap-7 max-md:gap-4" aria-label="Workspace">
               {navItems.map((item) => (
@@ -59,8 +59,8 @@ export function AppShell({ children }: { children: ReactNode }) {
       <main className="container-sable flex-1 py-12">{children}</main>
       <footer className="border-t border-line">
         <div className="container-sable flex items-center justify-between py-6">
-          <span className="label-sable text-mid">SABLE — workspace</span>
-          <span className="label-sable text-mid">Built on Convex · Clerk · Stripe</span>
+          <span className="label-sable text-mid">mstrmnd — workspace</span>
+          <span className="label-sable text-mid">Your personal agentic mastermind</span>
         </div>
       </footer>
     </div>

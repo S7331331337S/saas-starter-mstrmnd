@@ -10,21 +10,19 @@ import { proPlan } from "@/lib/plans";
 
 const checklist = [
   {
-    title: "Run the backend",
-    body: "npx convex dev pushes your schema and functions, and keeps types fresh.",
-    href: "https://docs.convex.dev/quickstart/nextjs",
-    external: true,
+    title: "Meet your agents",
+    body: "Give your mastermind a first objective and watch it plan, research, and report back.",
+    href: "/settings",
   },
   {
-    title: "Connect Stripe",
-    body: "Add STRIPE_SECRET_KEY + webhook, then subscribe with the 4242 test card.",
+    title: "Connect your tools",
+    body: "Link the apps you already use so agents can act with real context, not guesses.",
+    href: "/settings",
+  },
+  {
+    title: "Upgrade to Mastermind",
+    body: "Unlock unlimited parallel agents, memory, and every integration from the billing page.",
     href: "/billing",
-  },
-  {
-    title: "Make it yours",
-    body: "Swap the SABLE brand, plans, and landing copy. The README shows where.",
-    href: "https://github.com/RayFernando1337/saas-starter#customizing",
-    external: true,
   },
 ];
 
@@ -59,7 +57,7 @@ export default function DashboardPage() {
           ) : (
             <>
               <p className="heading-sable mt-3 text-[26px]">
-                {entitled ? proPlan.name : "Atelier"}
+                {entitled ? proPlan.name : "Solo"}
               </p>
               <Badge variant={entitled ? "default" : "outline"} className="label-sable mt-3">
                 {subscription ? subscription.status.replace("_", " ") : "free tier"}

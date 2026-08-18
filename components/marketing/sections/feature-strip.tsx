@@ -6,27 +6,27 @@ import { assets } from "@/lib/assets";
 const features = [
   {
     index: "01",
-    title: "Authentication",
-    body: "Clerk sign-in, sign-up, and session management. Route protection at the proxy layer, JWT handoff to Convex.",
+    title: "Autonomous agents",
+    body: "Delegate whole objectives, not just prompts. Agents plan the steps, call the tools, and report back when the work is done.",
     image: assets.catMen,
     href: "/sign-up",
-    cta: "Create an account",
+    cta: "Meet your agents",
   },
   {
     index: "02",
-    title: "Billing",
-    body: "Stripe Checkout and Customer Portal through the Convex Stripe component. Webhooks synced to your database.",
+    title: "Persistent memory",
+    body: "Every decision, preference, and thread is remembered. Context compounds instead of resetting with each session.",
     image: assets.catTailoring,
-    href: "/pricing",
-    cta: "See the plans",
+    href: "/#stack",
+    cta: "How memory works",
   },
   {
     index: "03",
-    title: "Realtime data",
-    body: "Convex queries stream to the UI. Type-safe from schema to component, no cache invalidation choreography.",
+    title: "Context routing",
+    body: "Connected to your stack. mstrmnd pulls the right context and picks the right tool for each task, automatically.",
     image: assets.catWomen,
-    href: "/#stack",
-    cta: "Read the stack",
+    href: "/pricing",
+    cta: "See the plans",
   },
 ];
 
@@ -35,9 +35,9 @@ export function FeatureStrip() {
     <section id="platform" className="bg-ink text-bone">
       <div className="container-sable py-24">
         <Reveal>
-          <p className="label-sable text-mid">The platform</p>
+          <p className="label-sable text-mid">The mind</p>
           <h2 className="heading-sable mt-4 max-w-[720px] text-[clamp(34px,5vw,64px)]">
-            Everything a SaaS needs, cut to measure
+            Everything a second brain should do, on call
           </h2>
         </Reveal>
         <div className="mt-16 grid grid-cols-3 gap-px bg-bone/15 max-md:grid-cols-1">

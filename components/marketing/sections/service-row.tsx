@@ -2,20 +2,20 @@ import { Reveal } from "@/components/marketing/reveal";
 
 const guarantees = [
   {
-    title: "Open source",
-    body: "MIT licensed. Fork it, rename it, sell it. No attribution theatre.",
+    title: "Private by default",
+    body: "Your memory and data stay yours. Nothing trains a shared model.",
   },
   {
-    title: "No secrets committed",
-    body: "Every credential lives in env vars. The example file documents all of them.",
+    title: "Transparent reasoning",
+    body: "See every plan, tool call, and source before you act on it.",
   },
   {
-    title: "Type-safe seams",
-    body: "Schema to component, one type system. Refactors fail in CI, not production.",
+    title: "Connect your stack",
+    body: "Plugs into the tools you already use — no rip and replace.",
   },
   {
-    title: "Self-serve billing",
-    body: "Customers subscribe, upgrade, and cancel without you touching a dashboard.",
+    title: "Cancel anytime",
+    body: "Self-serve billing. Upgrade or leave whenever it suits you.",
   },
 ];
 

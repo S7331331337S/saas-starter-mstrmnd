@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const links = [
-  { href: "/#platform", label: "Platform" },
-  { href: "/#stack", label: "Stack" },
+  { href: "/#platform", label: "The mind" },
+  { href: "/#stack", label: "The method" },
   { href: "/pricing", label: "Pricing" },
 ];
 
@@ -27,10 +27,10 @@ export function MarketingNav() {
 
         <Link
           href="/"
-          className="heading-sable text-[22px] tracking-[0.08em] px-6 max-md:px-3"
-          aria-label="SABLE home"
+          className="heading-sable normal-case text-[22px] tracking-[0.02em] px-6 max-md:px-3"
+          aria-label="mstrmnd home"
         >
-          Sable
+          mstrmnd
         </Link>
 
         <div className="flex items-center justify-end gap-7 max-md:gap-4">
