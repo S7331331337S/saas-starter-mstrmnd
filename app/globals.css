@@ -177,6 +177,43 @@
 }
 
 @layer components {
+  .hero-grid {
+    background-image:
+      linear-gradient(to right, rgba(16, 16, 16, 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(16, 16, 16, 0.055) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(to right, black, transparent 78%);
+  }
+
+  .hero-orbit::before,
+  .hero-orbit::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 5px;
+    width: 5px;
+    border-radius: 999px;
+    background: var(--bone);
+  }
+
+  .hero-orbit::before {
+    transform: translate(-50%, -50%) translateY(-95px);
+  }
+
+  .hero-orbit::after {
+    transform: translate(-50%, -50%) translateY(95px);
+  }
+
+  .hero-orbit {
+    animation: hero-orbit 18s linear infinite;
+  }
+
+  .hero-orbit--reverse {
+    animation-direction: reverse;
+    animation-duration: 12s;
+  }
+
   /* Primary button: ink slab, #2E2E2E layer slides up on hover */
   .btn-ink {
     position: relative;
@@ -397,6 +434,12 @@
 
   .shadow-hero {
     box-shadow: 0 26px 46px rgba(16, 16, 16, 0.22);
+  }
+}
+
+@keyframes hero-orbit {
+  to {
+    transform: rotate(360deg);
   }
 }
 
