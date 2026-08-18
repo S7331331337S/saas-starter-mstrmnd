@@ -11,7 +11,7 @@ export function PricingTeaser() {
             <div>
               <p className="label-sable text-mid">Pricing</p>
               <h2 className="heading-sable mt-4 text-[clamp(34px,4.4vw,58px)]">
-                Two cuts, no fine print
+                Two tiers, no fine print
               </h2>
             </div>
             <Link href="/pricing" className="btn-line">
@@ -47,7 +47,7 @@ export function PricingTeaser() {
                   href="/sign-up"
                   className={plan.key === "pro" ? "btn-ink mt-10 self-start" : "btn-line mt-10 self-start"}
                 >
-                  {plan.key === "pro" ? "Start with Collection" : "Start free"}
+                  {plan.key === "pro" ? "Start with Mastermind" : "Start free"}
                 </Link>
               </article>
             </Reveal>

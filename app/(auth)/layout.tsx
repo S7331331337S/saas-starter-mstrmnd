@@ -22,17 +22,17 @@ export default function AuthLayout({ children }: LayoutProps<"/">) {
           />
           <Link
             href="/"
-            className="heading-sable absolute left-10 top-10 z-10 bg-ink px-5 py-3 text-[20px] text-bone"
+            className="heading-sable normal-case absolute left-10 top-10 z-10 bg-ink px-5 py-3 text-[20px] text-bone"
           >
-            Sable
+            mstrmnd
           </Link>
           <p className="label-sable absolute bottom-10 left-10 z-10 bg-bone px-4 py-2">
-            Considered essentials for shipping SaaS
+            Your personal agentic mastermind
           </p>
         </div>
         <div className="flex flex-col items-center justify-center gap-8 px-[var(--gutter)] py-16">
-          <Link href="/" className="heading-sable text-[22px] md:hidden">
-            Sable
+          <Link href="/" className="heading-sable normal-case text-[22px] md:hidden">
+            mstrmnd
           </Link>
           {children}
           <Link href="/" className="btn-line">

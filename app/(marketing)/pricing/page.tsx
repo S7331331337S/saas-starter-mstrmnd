@@ -5,25 +5,25 @@ import { plans } from "@/lib/plans";
 
 export const metadata: Metadata = {
   title: "Pricing",
-  description: "Two plans. Start free, upgrade when the product earns it.",
+  description: "Two plans. Start free, upgrade when your mastermind earns its keep.",
 };
 
 const faqs = [
   {
-    q: "How does billing work?",
-    a: "Stripe Checkout handles payment, the Convex Stripe component syncs every webhook into your database, and the in-app billing page reads subscription state in realtime.",
+    q: "What can the agents actually do?",
+    a: "They plan multi-step objectives, research across your connected tools, draft and send follow-ups, and keep working in the background — reporting back with results, not just suggestions.",
+  },
+  {
+    q: "Is my data private?",
+    a: "Yes. Your memory and context stay yours and are never used to train a shared model. You can export or delete everything at any time.",
   },
   {
     q: "Can I cancel any time?",
-    a: "Yes. The Stripe Customer Portal is one click away from the billing page — cancel, resume, or change payment method without emailing anyone.",
+    a: "Yes. Billing is self-serve through Stripe — upgrade, downgrade, or cancel from the billing page in one click, no emails required.",
   },
   {
-    q: "Is this a real product?",
-    a: "SABLE is the demo brand of an open-source SaaS starter. Clone the repository, swap the copy and prices, and this page sells your product instead.",
-  },
-  {
-    q: "What happens after checkout?",
-    a: "Stripe redirects back to your dashboard, the webhook lands in Convex, and the subscription appears in the billing page — usually before the redirect finishes.",
+    q: "What's the difference between Solo and Mastermind?",
+    a: "Solo gives you one reasoning agent with persistent memory and a few connected tools. Mastermind unlocks unlimited parallel agents, unlimited memory, and every integration.",
   },
 ];
 
@@ -35,13 +35,13 @@ export default function PricingPage() {
           <Reveal>
             <p className="label-sable text-mid">Pricing</p>
             <h1 className="heading-sable mt-4 text-[clamp(48px,8vw,120px)]">
-              Priced like
+              Priced to
               <br />
-              essentials
+              think
             </h1>
             <p className="mt-6 max-w-[440px] text-[15px] leading-relaxed text-foreground/75">
-              Start free. Upgrade when your product earns it. Subscriptions are
-              managed entirely in-app through Stripe.
+              Start free with a single agent. Upgrade to the full council when
+              your mastermind earns its keep. Managed entirely in-app.
             </p>
           </Reveal>
         </div>
@@ -79,7 +79,7 @@ export default function PricingPage() {
                       plan.key === "pro" ? "btn-ink mt-10 self-start" : "btn-line mt-10 self-start"
                     }
                   >
-                    {plan.key === "pro" ? "Start with Collection" : "Start free"}
+                    {plan.key === "pro" ? "Start with Mastermind" : "Start free"}
                   </Link>
                 </article>
               </Reveal>

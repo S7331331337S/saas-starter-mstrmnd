@@ -9,12 +9,12 @@ export function Hero() {
       <div className="container-sable relative flex min-h-[calc(100svh-var(--nav-height)-40px)] flex-col justify-center py-16">
         {/* Floating context labels */}
         <div className="hv absolute left-[var(--gutter)] top-10 z-30" style={{ "--hv-delay": "0.55s" } as React.CSSProperties}>
-          <p className="label-sable">Starter — Edition 01</p>
-          <p className="label-sable text-mid mt-1.5">Next.js · Convex · Clerk · Stripe</p>
+          <p className="label-sable">Mastermind — Edition 01</p>
+          <p className="label-sable text-mid mt-1.5">Personal · Agentic · Persistent</p>
         </div>
         <div className="hv absolute bottom-10 right-[var(--gutter)] z-30 text-right max-sm:hidden" style={{ "--hv-delay": "0.65s" } as React.CSSProperties}>
-          <p className="label-sable">Considered essentials</p>
-          <p className="label-sable text-mid mt-1.5">For founders who ship</p>
+          <p className="label-sable">A mind that compounds</p>
+          <p className="label-sable text-mid mt-1.5">For people who think in systems</p>
         </div>
 
         {/* Layer 1: massive wordmark behind the model */}
@@ -22,13 +22,13 @@ export function Hero() {
           <Parallax speed={-0.06}>
             <h1
               aria-hidden="true"
-              className="hv heading-sable select-none text-center leading-[0.8] tracking-[-0.02em]"
-              style={{ fontSize: "clamp(96px, 22vw, 300px)", "--hv-delay": "0.1s" } as React.CSSProperties}
+              className="hv heading-sable normal-case select-none text-center leading-[0.8] tracking-[-0.04em]"
+              style={{ fontSize: "clamp(64px, 18vw, 260px)", "--hv-delay": "0.1s" } as React.CSSProperties}
             >
-              Sable
+              mstrmnd
             </h1>
           </Parallax>
-          <span className="sr-only">SABLE — the considered SaaS starter</span>
+          <span className="sr-only">mstrmnd — your personal agentic mastermind</span>
         </div>
 
         {/* Layer 2: model cutout in front of the type */}
@@ -53,8 +53,8 @@ export function Hero() {
           style={{ "--hv-delay": "0.45s" } as React.CSSProperties}
         >
           <p className="max-w-[300px] text-[15px] leading-relaxed text-foreground/80">
-            Auth, billing, and a realtime backend — already tailored. Clone the
-            repo, add your keys, ship your product.
+            A council of agents that plans, researches, and executes with you —
+            carrying every conversation forward in memory.
           </p>
           <div className="flex items-center gap-6">
             <Link href="/sign-up" className="btn-ink">

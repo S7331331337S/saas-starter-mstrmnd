@@ -19,24 +19,24 @@ export function Craft() {
         </div>
         <div className="flex flex-col justify-center px-[var(--gutter)] py-24">
           <Reveal>
-            <p className="label-sable text-mid">The cloth</p>
+            <p className="label-sable text-mid">The memory</p>
             <h2 className="heading-sable mt-4 text-[clamp(34px,4.4vw,58px)]">
-              Material honesty
+              Memory, not amnesia
             </h2>
             <p className="mt-6 max-w-[440px] text-[15px] leading-relaxed text-foreground/75">
-              No hidden abstraction layers. The Convex functions, the Clerk
-              proxy, the Stripe webhook route — all readable in an afternoon,
-              all yours to reshape. A starter should be a garment you alter,
-              not a machine you appease.
+              No hidden reasoning, no black box. Every plan, tool call, and
+              source is visible before you act on it — and every thread is
+              remembered. A mastermind should be a partner you can inspect, not
+              an oracle you have to trust blindly.
             </p>
             <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-line pt-8 max-w-[440px]">
               <div>
-                <dt className="label-sable text-mid">Composition</dt>
-                <dd className="mt-2 text-[13.5px]">100% TypeScript</dd>
+                <dt className="label-sable text-mid">Retention</dt>
+                <dd className="mt-2 text-[13.5px]">Persistent context</dd>
               </div>
               <div>
-                <dt className="label-sable text-mid">Care</dt>
-                <dd className="mt-2 text-[13.5px]">npm run build, warm iron</dd>
+                <dt className="label-sable text-mid">Ownership</dt>
+                <dd className="mt-2 text-[13.5px]">Yours to export, anytime</dd>
               </div>
             </dl>
           </Reveal>

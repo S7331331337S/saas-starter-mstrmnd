@@ -104,7 +104,7 @@ export function BillingView() {
             ) : subscription ? (
               <>
                 <div className="mt-3 flex items-center gap-4">
-                  <p className="heading-sable text-[30px]">{entitled ? proPlan.name : "Atelier"}</p>
+                  <p className="heading-sable text-[30px]">{entitled ? proPlan.name : "Solo"}</p>
                   <Badge variant={entitled ? "default" : "outline"} className="label-sable">
                     {subscription.status.replace("_", " ")}
                   </Badge>
@@ -119,7 +119,7 @@ export function BillingView() {
               </>
             ) : (
               <>
-                <p className="heading-sable mt-3 text-[30px]">Atelier</p>
+                <p className="heading-sable mt-3 text-[30px]">Solo</p>
                 <p className="mt-3 text-[13.5px] text-mid">
                   You&apos;re on the free tier. Upgrade below to unlock everything.
                 </p>

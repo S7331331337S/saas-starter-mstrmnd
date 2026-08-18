@@ -2,10 +2,10 @@ import { Counter } from "@/components/marketing/counter";
 import { Reveal } from "@/components/marketing/reveal";
 
 const stats = [
-  { value: 4, suffix: "", label: "Services wired together" },
-  { value: 0, suffix: "", label: "Servers for you to manage" },
-  { value: 14, suffix: "", label: "Stripe events handled" },
-  { value: 100, suffix: "%", label: "TypeScript, end to end" },
+  { value: 12, suffix: "", label: "Specialist agents on call" },
+  { value: 0, suffix: "", label: "Context you re-explain" },
+  { value: 24, suffix: "/7", label: "Working while you sleep" },
+  { value: 100, suffix: "%", label: "Yours — private by default" },
 ];
 
 export function Stats() {

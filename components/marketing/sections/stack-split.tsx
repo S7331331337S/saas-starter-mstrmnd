@@ -4,10 +4,10 @@ import { Reveal } from "@/components/marketing/reveal";
 import { assets } from "@/lib/assets";
 
 const layers = [
-  { name: "Next.js App Router", role: "Rendering, routing, and the marketing shell" },
-  { name: "Clerk", role: "Identity — sessions, JWTs, and styled auth flows" },
-  { name: "Convex", role: "Database, server functions, realtime sync" },
-  { name: "Stripe component", role: "Checkout, portal, webhooks in your backend" },
+  { name: "Reasoning", role: "Breaks goals into plans and adapts as conditions change" },
+  { name: "Memory", role: "A durable store of context, preferences, and history" },
+  { name: "Agents", role: "Autonomous workers that execute plans end to end" },
+  { name: "Tools", role: "Your connected apps and data, called on demand" },
 ];
 
 export function StackSplit() {
@@ -16,16 +16,16 @@ export function StackSplit() {
       <div className="grid grid-cols-2 max-md:grid-cols-1">
         <div className="flex flex-col justify-center px-[var(--gutter)] py-24">
           <Reveal>
-            <p className="label-sable text-mid">The stack</p>
+            <p className="label-sable text-mid">The method</p>
             <h2 className="heading-sable mt-4 text-[clamp(34px,4.4vw,58px)]">
-              Four layers,
+              Four faculties,
               <br />
-              one seam
+              one mind
             </h2>
             <p className="mt-6 max-w-[440px] text-[15px] leading-relaxed text-foreground/75">
-              Every layer speaks the next one&apos;s language. Clerk issues the JWT,
-              Convex verifies it, Stripe events land in your database. No glue
-              code to write, no drift to babysit.
+              Each faculty feeds the next. Reasoning drafts the plan, memory
+              supplies the context, agents do the work, and your tools ground it
+              in reality. Nothing to re-explain, no thread left behind.
             </p>
           </Reveal>
           <div className="mt-12 border-t border-line">
@@ -57,7 +57,7 @@ export function StackSplit() {
             />
           </Parallax>
           <p className="label-sable absolute bottom-8 left-8 z-10 bg-ink px-4 py-2 text-bone">
-            Wired end-to-end
+            One continuous mind
           </p>
         </div>
       </div>
